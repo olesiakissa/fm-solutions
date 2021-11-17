@@ -35,12 +35,12 @@ body {
   justify-content: space-evenly;
   align-items: center;
   min-height: 100vh;
-  background: url("images/pattern-background-mobile.svg") center top no-repeat ;
+  background: url("images/pattern-background-mobile.svg") center top no-repeat;
   background-size: contain;
 }
+/* Mobile layout */
 
 /* Card section */
-
 .card {
   width: 90%;
   background: #fff;
@@ -134,6 +134,7 @@ body {
   font-weight: 500;
 }
 
+/* CTA buttons */
 .cta-proceed,
 .cta-cancel {
   display: inline-block;
@@ -147,7 +148,7 @@ body {
 .cta-proceed {
   background: var(--bright-blue);
   color: #fff;
-  border-radius: .5em;
+  border-radius: 0.5em;
   align-self: stretch;
   padding: 1em 2em;
   box-shadow: 0 1em 1em var(--pale-blue);
@@ -156,7 +157,7 @@ body {
 .cta-cancel {
   background: none;
   color: var(--desaturated-blue);
-  margin-block-start: .5em;
+  margin-block-start: 0.5em;
 }
 
 .cta-proceed:hover,
@@ -184,4 +185,35 @@ footer {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Tablet layout */
+@media screen and (min-width: 768px) {
+
+  body {
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+
+  .card {
+    width: 60%;
+  }
+
+  .summary-container {
+    padding: 1.5em;
+  }
+
+  .summary-text {
+    line-height: 1.8;
+  }
+
+  .annual-plan-container {
+    font-size: 1.125rem;
+  }
+
+  .cta-proceed,
+  .cta-cancel {
+    margin: 1em 0 0.5em;
+  }
+
 }
