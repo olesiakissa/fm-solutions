@@ -49,6 +49,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin: 1em auto;
+  box-shadow: 0 .5em 1em hsla(224, 23%, 55%, 0.788);
 }
 
 .card header {
@@ -94,7 +95,7 @@ body {
   align-self: stretch;
   display: flex;
   justify-content: space-between;
-  align-content: baseline;
+  align-content: center;
 }
 
 .annual-plan-icon {
@@ -122,6 +123,7 @@ body {
 
 .annual-plan-text {
   margin: 0 auto 0 1.5em;
+  align-self: center;
 }
 
 .annual-plan-text p:first-child {
@@ -148,7 +150,7 @@ body {
 .cta-proceed {
   background: var(--bright-blue);
   color: #fff;
-  border-radius: 0.5em;
+  border-radius: 1em;
   align-self: stretch;
   padding: 1em 2em;
   box-shadow: 0 1em 1em var(--pale-blue);
@@ -204,16 +206,42 @@ footer {
   }
 
   .summary-text {
-    line-height: 1.8;
-  }
-
-  .annual-plan-container {
-    font-size: 1.125rem;
+    line-height: 1.7;
   }
 
   .cta-proceed,
   .cta-cancel {
     margin: 1em 0 0.5em;
+  }
+
+  footer {
+    margin-block-start: 0;
+  }
+
+}
+
+/* Desktop layout */
+@media screen and (min-width: 1440px) {
+
+  body {
+    background: url("images/pattern-background-desktop.svg") center top no-repeat;
+    background-size: contain;
+  }
+
+  .card {
+    width: 55%;
+  }
+
+  .summary-text {
+    line-height: 1.8;
+  }
+
+  .annual-plan-container {
+    font-size: 1rem;
+  }
+
+  .cta-proceed {
+    margin-block-start: 1.5em;
   }
 
 }
