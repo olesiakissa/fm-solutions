@@ -31,15 +31,15 @@ For more information on this, please head to the section [Continued development]
 
 ##### MOBILE
 
-![](order-summary-component/images/card-mobile.png)
+![Mobile layout](./images/card-mobile.png)
 
 ##### TABLET
 
-![](order-summary-component/images/card-tablet.png)
+![Tablet layout](./images/card-tablet.png)
 
 ##### DESKTOP
 
-![](order-summary-component/images/card-desktop.png)
+![Desktop layout](./images/card-desktop.png)
 
 
 ### Links
@@ -68,9 +68,9 @@ with wrong dimensions and then was really surprised how my layout shifted while 
 :small_orange_diamond: Another important thing I'd like to remember is that not every element can inherit properties from the ancestors and 
 you should be really careful when working with input elements for instance.
 
-### :fast_forward: Continued development
+### Continued development
 
-I'd like to focus more on grid layout in the future, because it requires less time to create it. 
+:fast_forward: I'd like to focus more on grid layout in the future, because it requires less time to create it. 
 At first I was thinking that I should have used it for mobile version and lay out things using template areas, but then
 I realized this is too much work for just a single column. That's why I switched to flexbox for mobile.
 Things got tricky when I had to manipulate sections in both directions and the amount of flex containers
