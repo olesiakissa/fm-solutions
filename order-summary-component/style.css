@@ -28,7 +28,6 @@ html {
   padding: 0;
 }
 
-/* TODO: add background pattern */
 body {
   font-family: "Red Hat Display", sans-serif;
   display: flex;
@@ -36,16 +35,19 @@ body {
   justify-content: space-evenly;
   align-items: center;
   min-height: 100vh;
+  background: url("images/pattern-background-mobile.svg") center top no-repeat ;
 }
 
 /* Card section */
 
 .card {
+  width: 90%;
   background: #fff;
   border-radius: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 1em;
 }
 
 .card header {
@@ -53,7 +55,7 @@ body {
 }
 
 .header-img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 1.5em 1.5em 0 0;
 }
 
@@ -131,11 +133,34 @@ body {
   font-weight: 500;
 }
 
-/* TODO: add styles to cta buttons*/
 .cta-proceed,
 .cta-cancel {
   display: inline-block;
-  margin: 1.5em;
+  margin: 1.5em 0;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 900;
+  border: none;
+}
+
+.cta-proceed {
+  background: var(--bright-blue);
+  color: #fff;
+  border-radius: .5em;
+  align-self: stretch;
+  padding: 1em 2em;
+  box-shadow: 0 1em 1em var(--pale-blue);
+}
+
+.cta-cancel {
+  background: none;
+  color: var(--desaturated-blue);
+  margin-block-start: .5em;
+}
+
+.cta-proceed:hover,
+.cta-cancel:hover {
+  cursor: pointer;
 }
 
 /* Footer section */
