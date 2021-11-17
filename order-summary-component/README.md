@@ -14,7 +14,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
 - [Author](#author)
 
-
 ## Overview
 
 ### The challenge
@@ -23,8 +22,8 @@ Users should be able to:
 
 - See hover states for interactive elements
 
-:information_source: We were given a task to create mobile and desktop layout, but I also wanted to add a tablet layout 
-because in tablet mode I had switched my layout from being a flexbox container to the grid one. 
+:information_source: We were given a task to create mobile and desktop layout, but I also wanted to add a tablet layout
+because in tablet mode I had switched my layout from being a flexbox container to the grid one.
 For more information on this, please head to the section [Continued development](#continued-development)
 
 ### Screenshots
@@ -41,11 +40,10 @@ For more information on this, please head to the section [Continued development]
 
 ![Desktop layout](./images/card-desktop.png)
 
-
 ### Links
 
 - Solution URL: [go to](https://git.io/J1Czb)
-- Live Demo: [tba](tba) 
+- Live Demo: [demo](https://fmok-order-summary-component.netlify.app/)
 
 ## My process
 
@@ -60,17 +58,17 @@ For more information on this, please head to the section [Continued development]
 ### What I learned
 
 :small_orange_diamond: In this project I recalled how to work with `background` property shorthand, I also gained a deeper understanding
-of how the element's width is calculated. 
+of how the element's width is calculated.
 
 :small_orange_diamond: In the beginning I forgot to reset my margins and paddings and created everything
 with wrong dimensions and then was really surprised how my layout shifted while I was positioning the header image and buttons. :hurtrealbad:
 
-:small_orange_diamond: Another important thing I'd like to remember is that not every element can inherit properties from the ancestors and 
+:small_orange_diamond: Another important thing I'd like to remember is that not every element can inherit properties from the ancestors and
 you should be really careful when working with input elements for instance.
 
 ### Continued development
 
-:fast_forward: I'd like to focus more on grid layout in the future, because it requires less time to create it. 
+:fast_forward: I'd like to focus more on grid layout in the future, because it requires less time to create it.
 At first I was thinking that I should have used it for mobile version and lay out things using template areas, but then
 I realized this is too much work for just a single column. That's why I switched to flexbox for mobile.
 Things got tricky when I had to manipulate sections in both directions and the amount of flex containers
