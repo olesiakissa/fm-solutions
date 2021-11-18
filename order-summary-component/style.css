@@ -154,17 +154,29 @@ body {
   align-self: stretch;
   padding: 1em 2em;
   box-shadow: 0 1em 1em var(--pale-blue);
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .cta-cancel {
   background: none;
   color: var(--desaturated-blue);
   margin-block-start: 0.5em;
+  transition: text-shadow 0.2s ease-in-out;
 }
 
 .cta-proceed:hover,
 .cta-cancel:hover {
   cursor: pointer;
+}
+
+.cta-proceed:hover {
+  box-shadow: 0 0.5em 1em var(--desaturated-blue);
+  transform: box-shadow translateY(0.5em);
+}
+
+.cta-cancel:hover {
+  text-shadow: 0 1px 1.5em var(--desaturated-blue);
+  transform: text-shadow translateY(0.5em);
 }
 
 /* Footer section */
