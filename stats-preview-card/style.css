@@ -1,0 +1,81 @@
+:root {
+  /* COLORS */
+  /* primary */
+  --dark-blue: hsl(233, 47%, 7%);
+  --desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --white-transparent-07: hsla(0, 0%, 100%, 0.75);
+  --white-transparent-06: hsla(0, 0%, 100%, 0.6);
+
+  /* FONTS */
+  --ff-primary: 'Lexend Deca', sans-serif;
+  --ff-accent: 'Inter', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
+  font-size: 15px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-family: var(--ff-primary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Card section */
+.card-container {
+  margin: auto;
+  width: min(90%, 350px);
+}
+
+.card {
+  display: grid;
+  grid-template-rows: minmax(15rem, auto) 1fr;
+  grid-template-areas: 
+  "img"
+  "content";
+  background-color: var(--desaturated-blue);
+  border-radius: 0.5em;
+}
+
+#img-container {
+  width: 100%;
+  background-image: linear-gradient(hsla(277, 42%, 37%, 0.75), hsla(277, 42%, 37%, 0.75)), url(images/image-header-mobile.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: img;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.content-container {
+  padding: 1em;
+  margin: 1rem 0;
+}
+
+.content-container h1 {
+  margin-block-end: 1rem;
+}
+
+/* Footer */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
