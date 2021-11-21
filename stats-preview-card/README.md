@@ -34,7 +34,7 @@ Your users should be able to:
 ### Links
 
 - Solution URL: [go to](https://git.io/J1HSr)
-- Live Demo: [go to](https://fmok-order-summary-component.netlify.app/)
+- Live Demo: [go to](https://fmok-stats-preview-card.netlify.app)
 
 ## My process
 
