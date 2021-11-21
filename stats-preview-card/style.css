@@ -11,8 +11,8 @@
   --white-transparent-06: hsla(0, 0%, 100%, 0.6);
 
   /* FONTS */
-  --ff-primary: 'Lexend Deca', sans-serif;
-  --ff-accent: 'Inter', sans-serif;
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-accent: "Inter", sans-serif;
 }
 
 *,
@@ -41,6 +41,12 @@ body {
   text-align: center;
 }
 
+h1,
+h2 {
+  font-family: var(--ff-accent);
+  font-weight: 900;
+}
+
 /* Card section */
 .card-container {
   margin: auto;
@@ -50,16 +56,22 @@ body {
 .card {
   display: grid;
   grid-template-rows: minmax(15rem, auto) 1fr;
-  grid-template-areas: 
-  "img"
-  "content";
+  grid-template-columns: minmax(auto, 350px);
+  grid-template-areas:
+    "img"
+    "content";
   background-color: var(--desaturated-blue);
   border-radius: 0.5em;
+  margin: 5rem 0;
 }
 
 #img-container {
   width: 100%;
-  background-image: linear-gradient(hsla(277, 42%, 37%, 0.75), hsla(277, 42%, 37%, 0.75)), url(images/image-header-mobile.jpg);
+  background-image: linear-gradient(
+      hsla(277, 42%, 37%, 0.75),
+      hsla(277, 42%, 37%, 0.75)
+    ),
+    url(images/image-header-mobile.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,12 +82,58 @@ body {
 .content-container {
   padding: 1em;
   margin: 1rem 0;
+  grid-area: content
 }
 
 .content-container h1 {
   margin-block-end: 1rem;
 }
 
+.accent {
+  color: var(--soft-violet);
+}
+
+#text-insights {
+  line-height: 1.8;
+  margin: 1rem;
+  color: var(--white-transparent-07);
+}
+
+.stats {
+  margin-block-start: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats-item {
+  padding: 1em;
+}
+
+.stats-item p {
+  text-transform: uppercase;
+  padding: 0.5em;
+  color: var(--white-transparent-06);
+}
+
 /* Footer */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+footer {
+  padding: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.attribution > * {
+  padding: 0.5em;
+}
+
+.attribution a {
+  color: var(--soft-violet);
+}
+
