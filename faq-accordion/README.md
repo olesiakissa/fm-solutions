@@ -37,7 +37,9 @@ Users should be able to:
 ### Links
 
 - Solution URL: [go to](https://git.io/JMghv)
-- Live Demo: [demo](https://fmok-faq-accordion.netlify.app/)
+- Live Demo: [go to](https://fmok-faq-accordion.netlify.app/)
+
+## My process
 
 ### Built with
 
@@ -48,8 +50,10 @@ Users should be able to:
 
 ### What I learned
 
-:arrow_right: In this project I learned how to create collapsibles that allow to open only one section at a time.
+:arrow_right: In this project I learned how to create collapsibles that allow to open only one section at a time. 
+
 :arrow_right: I also had a lot of fun with the positioning of elements and animations.
+
 ### Continued development
 
 :fast_forward: I think that this component can be improved by
