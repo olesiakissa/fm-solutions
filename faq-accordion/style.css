@@ -17,6 +17,9 @@
 
   /* FONTS */
   --ff-primary: "Kumbh Sans", sans-serif;
+
+  /* effects */
+  --card-shadow: 0px 30px 30px -5px hsla(240deg 40% 20% / 39%);
 }
 
 *,
@@ -65,7 +68,7 @@ a {
   border-radius: 1.5rem;
   padding: 2rem 1rem;
   height: fit-content;
-  box-shadow: 0px 30px 30px -5px hsla(240deg 40% 20% / 39%);
+  box-shadow: var(--card-shadow);
 }
 
 .illustration-container {
@@ -213,4 +216,72 @@ footer {
 
 .attribution a:active {
   background-color: var(--light-grayish-blue);
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  body {
+    align-items: center;
+    justify-items: center;
+  }
+
+  .card-container {
+    border-radius: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img card";
+    width: 80%;
+    max-width: 1000px;
+    position: relative;
+    box-shadow: var(--card-shadow);
+  }
+
+  .card-container::before {
+    display: inline-block;
+    position: absolute;
+    content: url(images/illustration-box-desktop.svg);
+    top: 11rem;
+    left: -6.057rem;
+    width: 100px;
+    height: 100px;
+    transform: scale(1.075);
+    z-index: 111;
+  }
+
+  .illustration-container {
+    border-radius: 1.5rem 0 0 1.5rem;
+    overflow: hidden;
+    background: url(images/bg-pattern-desktop.svg), #fff;
+    background-repeat: no-repeat;
+    background-position: -34.5rem -20.25rem;
+  }
+
+  .main-image {
+    width: 100%;
+    transform: translate(-5.5rem, 2rem);
+  }
+
+  .card {
+    border-radius: 0 1.5rem 1.5rem 0;
+    background: #fff;
+    padding-left: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .faq-content {
+    margin: 2rem 4rem 2rem 0;
+  }
+
+  .faq-content h1 {
+    text-align: left;
+    padding-inline-start: 0;
+  }
+
+  .faq-question:hover {
+    color: var(--soft-red);
+  }
+
+  .faq-answer p {
+    max-width: 48ch;
+  }
 }
