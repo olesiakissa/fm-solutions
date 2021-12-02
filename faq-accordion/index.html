@@ -8,14 +8,12 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+      href="./images/favicon-32x32.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
@@ -26,66 +24,113 @@
       </div>
       <div class="card">
         <div class="faq-content">
-          <header>
-            <h1>FAQ</h1>
+          <header tabindex="0">
+            <h1>
+              <abbr 
+                aria-label="Frequently Asked Questions" 
+                title="Frequently Asked Questions">FAQ
+            </abbr>
+            </h1>
           </header>
           <div class="faq-content-items">
             <div class="faq-item">
-              <button class="faq-question collapsible">
+              <button
+                aria-expanded="false"
+                aria-controls="faq-panel-01"
+                id="faq-header-01"
+                class="faq-question collapsible">
                 How many team members can I invite?
               </button>
-              <div class="faq-answer">
+              <div
+                role="region"
+                aria-labelledby="faq-header-01"
+                id="faq-panel-01"
+                class="faq-answer">
                 <p>
-                  You can invite up to 2 additional users on the Free plan. There
-                  is no limit on team members for the Premium plan.
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
                 </p>
               </div>
             </div>
 
             <div class="faq-item">
-              <button class="faq-question collapsible">
+              <button
+                aria-expanded="false"
+                aria-controls="faq-panel-02"
+                id="faq-header-02"
+                class="faq-question collapsible">
                 What is the maximum file upload size?
               </button>
-              <div class="faq-answer">
-              <p>
-                No more than 2GB. All files in your account must fit your
-                allotted storage space.
-              </p>
-            </div>
-            </div>
-
-            <div class="faq-item">
-              <button class="faq-question collapsible">How do I reset my password?</button>
-              <div class="faq-answer">
+              <div
+                role="region"
+                aria-labelledby="faq-header-02"
+                id="faq-panel-02"
+                class="faq-answer">
                 <p>
-                Click “Forgot password” from the login page or “Change password”
-                from your profile page. A reset link will be emailed to you.
-              </p>
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </p>
               </div>
             </div>
 
             <div class="faq-item">
-              <button class="faq-question collapsible">
+              <button
+                aria-expanded="false"
+                aria-controls="faq-panel-03"
+                id="faq-header-03"
+                class="faq-question collapsible">
+                How do I reset my password?
+              </button>
+              <div
+                role="region"
+                aria-labelledby="faq-header-03"
+                id="faq-panel-03"
+                class="faq-answer">
+                <p>
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button
+                aria-expanded="false"
+                aria-controls="faq-panel-04"
+                id="faq-header-04"
+                class="faq-question collapsible">
                 Can I cancel my subscription?
               </button>
-              <div class="faq-answer">
-              <p>
-                Yes! Send us a message and we’ll process your request no
-                questions asked.
-              </p>
+              <div
+                role="region"
+                aria-labelledby="faq-header-04"
+                id="faq-panel-04"
+                class="faq-answer">
+                <p>
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </p>
               </div>
-    
             </div>
 
             <div class="faq-item">
-              <button class="faq-question collapsible">
+              <button
+                aria-expanded="false"
+                aria-controls="faq-panel-05"
+                id="faq-header-05"
+                class="faq-question collapsible">
                 Do you provide additional support?
               </button>
-              <div class="faq-answer">
-              <p>
-                Chat and email support is available 24/7. Phone lines are open
-                during normal business hours.
-              </p>
+              <div
+                role="region"
+                aria-labelledby="faq-header-05"
+                id="faq-panel-05"
+                class="faq-answer">
+                <p>
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </p>
               </div>
             </div>
           </div>
@@ -97,17 +142,15 @@
       <div class="attribution">
         <small>
           Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >
+          <a 
+          aria-label="Frontend Mentor Platform Website"
+          href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
         </small>
-        <small
-          >Coded by
+        <small>Coded by
           <a
+          aria-label="Olesia Kissa Frontend Mentor Profile"
             href="https://www.frontendmentor.io/profile/olesiakissa"
-            target="_blank"
-            >Olesia Kissa</a
-          >
+            target="_blank">Olesia Kissa</a>
         </small>
       </div>
     </footer>

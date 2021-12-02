@@ -47,6 +47,10 @@ a {
   outline: none;
 }
 
+abbr {
+  text-decoration: none;
+}
+
 .card-container {
   margin: -2rem auto 1rem;
   width: 90%;

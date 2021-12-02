@@ -11,6 +11,7 @@ function initAccordion() {
         collapseItems(btnCollapsibleArray);
       } else {
         collapseItems(btnCollapsibleArray);
+        this.setAttribute('aria-expanded', 'true');
         this.classList.toggle("active");
         this.nextElementSibling.classList.toggle("visible");
       }
@@ -20,6 +21,7 @@ function initAccordion() {
 
 function collapseItems(accordion) {
   for (let i = 0; i < accordion.length; i++) {
+    accordion[i].setAttribute('aria-expanded', 'false');
     accordion[i].classList.toggle("active", false);
     accordion[i].nextElementSibling.classList.toggle("visible", false);
   }
