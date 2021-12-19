@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  const modalShareBtn = $(".btn-share");
+  const modalShareOpenBtn = $(".btn-open-modal");
+  const modalShareCloseBtn = $(".btn-close-modal");
   const modalShareDialog = $(".modal-share");
 
   const btnShareFacebook = $(".btn-facebook");
@@ -10,14 +11,23 @@ $(document).ready(function() {
   const articleTitle = $(".article-title").text().trim();
   const imageUrl = $(".article-img").attr("src");
 
-  modalShareBtn.click(function() {
+  modalShareOpenBtn.click(function() {
     modalShareDialog.fadeIn("fast").css("display", "flex").addClass("open");
+    // We have to make this button invisible for screen reader because
+    // it keeps reading it when the share dialog is opened
+    $(this).attr("aria-hidden", "true");
+    // Moving focus to the buttons in modal
+    btnShareFacebook.focus();
   });
 
   modalShareDialog.click(function() {
       $(this).fadeOut("fast", function() {
       $(this).removeClass("open");
     });
+  });
+
+  modalShareCloseBtn.click(function() {
+    modalShareOpenBtn.attr("aria-hidden", "false");
   });
 
   // Rendering share to socials
@@ -44,7 +54,7 @@ $(document).ready(function() {
     window.open(shareUrl, "fb-popup", "");
   }
 
-  function shareToTwitter(url) {
+  function shareToTwitter(url, title) {
     let shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
     window.open(shareUrl);
   }
